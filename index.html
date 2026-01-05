@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pembaca PDF untuk makalah: Succinct Betti-2 Positivity and Its Complexity" />
+  <title>Succinct Betti-2 Positivity and Its Complexity — PDF Viewer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optional: clean, modern font. Falls back to system fonts if blocked. -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#viewer">Lewati ke PDF</a>
+
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="header-titles">
+        <h1 class="paper-title">Succinct Betti-2 Positivity and Its Complexity</h1>
+        <p class="paper-meta">
+          <span class="paper-author">Alwin</span>
+          <span class="dot">•</span>
+          <span class="paper-affil">University of Indonesia</span>
+        </p>
+      </div>
+
+      <div class="header-actions">
+        <a id="downloadBtn" class="btn btn-primary" href="assets/paper.pdf" download>
+          Download PDF
+        </a>
+        <a id="openBtn" class="btn btn-secondary" href="assets/paper.pdf" target="_blank" rel="noopener">
+          Buka di Tab Baru
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      <section class="viewer-card" aria-label="PDF Viewer">
+        <div class="viewer-toolbar">
+          <div class="viewer-hint" role="note">
+            Tip: Gunakan pinch-to-zoom di mobile, atau Ctrl/⌘ + scroll di desktop.
+          </div>
+        </div>
+
+        <div id="viewer" class="viewer">
+          <!-- Primary: browser-native PDF viewer -->
+          <iframe
+            id="pdfFrame"
+            class="pdf-frame"
+            title="PDF: Succinct Betti-2 Positivity and Its Complexity"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            src="assets/paper.pdf#view=FitH"
+          ></iframe>
+
+          <!-- Fallback (shown if PDF fails to load / not supported) -->
+          <div id="pdfFallback" class="fallback" hidden>
+            <h2>PDF tidak bisa ditampilkan di browser ini.</h2>
+            <p>
+              Silakan gunakan tombol berikut untuk membuka PDF di tab baru atau mengunduhnya.
+            </p>
+            <div class="fallback-actions">
+              <a class="btn btn-primary" href="assets/paper.pdf" target="_blank" rel="noopener">Open PDF in new tab</a>
+              <a class="btn btn-secondary" href="assets/paper.pdf" download>Download PDF</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <span>© <span id="year"></span> — Static PDF Viewer</span>
+      <span class="footer-right">
+        Dibuat untuk GitHub Pages (tanpa backend).
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
